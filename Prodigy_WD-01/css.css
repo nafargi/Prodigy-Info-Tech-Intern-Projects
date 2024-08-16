@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    --text: #f4f4f4;
+    --text-inverse: #333;
+    --background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2em 3em ;
+    background: var(--background);
+    color: var(--text);
+    z-index: 1000;
+    transition: background-color 250ms ease-in;
+}
+.menu-style{
+    --text: #333;
+    --text-inverse: #f4f4f4;
+    --background: #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 0px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+.site-logo img{
+    width: 45px;
+    background: rgb(2, 2, 50);
+    border-radius: 50%;
+}
+.nav-class-list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-link{
+    --spacing: 1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    display: inline-block;
+    padding: calc(var(--spacing)/2) var(--spacing);
+    font-size: .95em;
+    letter-spacing: 2px;
+    transition: color .4s ease-in-out;
+
+}
+.nav-link:hover{
+  color: rgb(113, 255, 47);
+  font-weight: 500;
+}
+
+.nav-link-account{
+    border: 1.5px solid currentColor;
+    border-radius: 2em;
+    margin-left: 1em;
+    transition: background .5s ease-in-out;
+    letter-spacing: 1px;
+    padding: 10px 35px;
+}
+
+.nav-link-account-hue{
+    background: rgb(34, 157, 86);
+}
+.nav-link-account:hover {
+    background: var(--text);
+    color: var(--text-inverse);
+  }
+.home-intro{
+    padding: 45vh 0;
+    color: #fff;
+    text-align: center;
+    background: rgba(22, 9, 78, 0.877) url(//unsplash.it/900);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.home-intro h1{
+   font-size: 5rem;
+}
+.container{
+    padding: 0 25%;
+}
+.about-page{
+    padding: 4em 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.about-page h2{
+    margin: 3% auto;
+}
+.about-column{
+    display: flex;
+}
+.about-column h2{
+    margin:10%  auto;
+}
+.row-under-column:not(:first-child) {
+  margin-left: 1.57em;
+}
+.info-graphics{
+    background: #f4f4f4;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.content-container{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+.content-container:not(:last-child){
+    margin-bottom: 15%;
+}
+
+
+ /* responsive design */
+
+/* -----------for small screen------- */
+
+@media (max-width: 880.89px) {
+.container,.about-page{
+    padding: auto 10%;
+}
+.home-intro h1{
+    font-size: 3rem;
+}
+.about-page{
+    padding: 10%;
+}
+.about-column{
+    flex-wrap: wrap;
+}
+.main-nav-class{
+    display: none;
+}
+.content-container{
+    flex-direction: column;
+}
+}

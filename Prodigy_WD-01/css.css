@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 header{
     --text: #f4f4f4;
     --text-inverse: #333;
@@ -82,25 +83,49 @@ header{
 .home-intro h1{
    font-size: 5rem;
 }
+.services-page{
+    padding: 45vh 0;
+    color: #fff;
+    text-align: center;
+    background:  rgb(0, 0, 0) url(//unsplash.it/901);
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
 .container{
     padding: 0 25%;
 }
 .about-page{
+    display: flex;
+    align-items: center;
+    width: 100%;
     padding: 4em 0;
-    max-width: 900px;
     margin: 0 auto;
 }
 .about-page h2{
     margin: 3% auto;
 }
+.about-content{
+    padding: 0 5%;
+}
 .about-column{
     display: flex;
+    column-gap: 2.5rem;
 }
 .about-column h2{
     margin:10%  auto;
 }
-.row-under-column:not(:first-child) {
-  margin-left: 1.57em;
+.row-under-column {
+  margin-top: 2%;
+  border-radius: 5px;
+   padding: 2%;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.about-side-img img{
+    height: 65vh;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.269) 0px 3px 12px;
 }
 .info-graphics{
     background: #f4f4f4;

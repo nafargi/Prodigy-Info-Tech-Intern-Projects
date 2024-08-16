@@ -1,1 +1,1 @@
-<img src="./img/fullpage.png">
+<img src="./img/fullpage.jpg">

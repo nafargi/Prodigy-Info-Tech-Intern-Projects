@@ -1,0 +1,120 @@
+/*TODO: Now will import the google fonts*/
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Poppins:wght@300;500&family=Red+Hat+Display:wght@700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-c: #444;
+  --grey-c: #f3f3f3;
+  --bg-c: #eee;
+  --border-radius: 25px;
+}
+body {
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  background: url(img/img2.jpg) center/cover no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position-y: -10px;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -2;
+  left: 0;
+}
+.container {
+  position: relative;
+  top: 20%;
+  z-index: 3;
+  width:1000px;
+  border: 1px solid rgba(0, 255, 166, 0.562);
+  border-radius: 15px;
+  margin: auto;
+  background-color: rgba(7, 7, 28, 0.084);
+  text-align: center;
+  backdrop-filter: blur(20px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.container__header {
+  font-weight: 100;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: var(--grey-c);
+  letter-spacing: 5px;
+}
+.container__header span {
+  display: block;
+}
+.btn {
+  border-radius: 15px;
+  background-color: rgb(42, 137, 120);
+  width: 100px;
+  height: 50px;
+  font-weight: 500;
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+.btn:active {
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+.limitExceed{
+    color: #eee;
+}
+.lap-time {
+    color: #ffffff;
+  width: 500px;
+  font-size: 6rem;
+  background-color: rgba(255, 255, 255, 0.281);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--bg-c);
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+.lap-time span {
+  display: inline-block;
+  width: 25%;
+}
+#tens {
+  font-size: 2rem;
+}
+
+.controls {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 35px auto 35px auto;
+
+  width: 450px;
+}
+.laps-container {
+  max-width: 400px;
+  margin: 10px auto 2px auto;
+  font-size: 2rem;
+  margin-bottom: 2px;
+}
+.laps-container span {
+  letter-spacing: 3px;
+}
+
+.laps-container li {
+  border-radius: var(--border-radius);
+}
+.laps-container li:nth-child(even) {
+  color: white;
+}
+.laps-container li:nth-child(odd) {
+  background-color: rgba(0, 255, 229, 0.219);
+  margin-bottom: 3%;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.374);
+}

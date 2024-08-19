@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/5e2596b2c7.js" crossorigin="anonymous"></script>
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <main class="container">
+      <h1 class="container__header">
+        <span>STOP WATCH  <i class="fa-solid fa-clock"></i> </span>
+      </h1>
+      <p class="lap-time">
+        <span id="minutes">00</span>:<span id="seconds">00</span>.<span id="tens">00</span >
+      </p>
+
+      <div class="controls">
+        <button id="start-btn" class="btn  btn-large"><i class="fa-solid fa-play"></i> </button>
+        <button id="pause-btn" class="btn  btn-large"><i class="fa-solid fa-pause"></i></button>
+        <button id="stop-btn" class="btn  btn-large"> <i class="fa-solid fa-stop"></i></button>
+        <button id="reset-btn" class="btn btn-large"> <i class="fa-solid fa-arrow-rotate-right"></i> </button>
+      </div>
+      <p id="limitExceed" style="color: rgb(255, 255, 255); background-color: rgba(3, 3, 3, 0.135); ">  Lap limit not Exceeded </p>
+      <ul id="laps" class="laps-container"></ul>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>

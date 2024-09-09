@@ -23,7 +23,6 @@ function startGame() {
 		cells[i].addEventListener('click', turnClick, false);
 	}
 }
-
 function turnClick(square) {
 	if (typeof origBoard[square.target.id] == 'number') {
 		turn(square.target.id, huPlayer)

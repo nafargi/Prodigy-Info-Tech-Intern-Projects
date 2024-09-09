@@ -30,7 +30,6 @@ function turnClick(square) {
 		if (!checkWin(origBoard, huPlayer) && !checkTie()) turn(bestSpot(), aiPlayer);
 	}
 }
-
 function turn(squareId, player) {
 	origBoard[squareId] = player;
     document.getElementById(squareId).innerHTML = player;

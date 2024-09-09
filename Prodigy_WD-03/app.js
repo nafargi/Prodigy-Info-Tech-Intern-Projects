@@ -51,7 +51,6 @@ function checkWin(board, player) {
 	}
 	return gameWon;
 }
-
 function gameOver(gameWon) {
 	for (let index of winCombos[gameWon.index]) {
 		document.getElementById(index).style.backgroundColor =

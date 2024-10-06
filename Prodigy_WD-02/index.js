@@ -14,7 +14,6 @@ window.onload = function () {
     let tensSet = '00';
     let Interval;
     var count = 0;
-  
     startBtn.onclick = function () {
         clearInterval(Interval); 
       Interval = setInterval(startTimer, 10);

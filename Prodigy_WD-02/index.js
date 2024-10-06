@@ -53,7 +53,6 @@ window.onload = function () {
       alertmessage.innerHTML = "Lap limit not Exceeded";
       alertmessage.style.color = "white";
     };
-  
     function startTimer() {
       tensSet++;
   

@@ -36,7 +36,6 @@ window.onload = function () {
 
     };
 
-
   pauseBtn.addEventListener('click', () => {
     clearInterval(Interval); 
   });
